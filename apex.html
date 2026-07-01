@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APEX — Case Study</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family: Inter, sans-serif;
+background:#070312;
+color:white;
+overflow-x:hidden;
+line-height:1.6;
+}
+
+/* background doodles */
+
+.doodle{
+position:fixed;
+z-index:-1;
+opacity:0.08;
+font-size:55px;
+animation:float 8s ease-in-out infinite;
+}
+
+.coin{
+top:12%;
+left:5%;
+}
+
+.chart{
+right:8%;
+top:20%;
+animation-delay:2s;
+}
+
+.bank{
+bottom:10%;
+left:8%;
+animation-delay:4s;
+}
+
+.graph{
+right:12%;
+bottom:15%;
+animation-delay:1s;
+}
+
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-20px);}
+100%{transform:translateY(0px);}
+}
+
+/* layout */
+
+.wrap{
+width:88%;
+max-width:1200px;
+margin:auto;
+}
+
+/* back */
+
+.back{
+position:fixed;
+top:30px;
+left:30px;
+text-decoration:none;
+background:#141020;
+color:white;
+padding:12px 22px;
+border-radius:40px;
+font-weight:500;
+z-index:100;
+}
+
+/* hero */
+
+.hero{
+min-height:85vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding:40px 0;
+}
+
+.hero h1{
+font-size:6rem;
+font-weight:800;
+margin-bottom:25px;
+letter-spacing:-2px;
+background:linear-gradient(90deg,#9d5cff,#ff4fd8);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+font-size:1.35rem;
+max-width:750px;
+color:#b4b4c5;
+margin-bottom:40px;
+}
+
+.meta{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.meta span{
+background:#141020;
+padding:14px 22px;
+border-radius:40px;
+border:1px solid rgba(255,255,255,.08);
+}
+
+/* sections */
+
+.sec{
+padding:90px 0;
+}
+
+.sec h2{
+font-size:3rem;
+margin-bottom:30px;
+}
+
+.txt{
+font-size:1.15rem;
+max-width:850px;
+color:#b8b8c9;
+margin-bottom:40px;
+}
+
+/* cards */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:40px;
+}
+
+.card{
+background:#141020;
+padding:30px;
+border-radius:22px;
+border:1px solid rgba(255,255,255,.06);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+/* process */
+
+.process{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.step{
+background:linear-gradient(90deg,#8d4cff,#ff55d6);
+padding:14px 24px;
+border-radius:40px;
+font-weight:600;
+}
+
+/* image */
+
+.shot{
+width:100%;
+margin-top:40px;
+overflow:hidden;
+border-radius:25px;
+box-shadow:0 20px 60px rgba(0,0,0,.35);
+transition:.4s;
+}
+
+.shot:hover{
+transform:translateY(-8px);
+}
+
+.shot img{
+width:100%;
+display:block;
+}
+
+/* mobile */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:3.5rem;
+}
+
+.sec h2{
+font-size:2.2rem;
+}
+
+.meta{
+flex-direction:column;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- doodles -->
+
+<div class="doodle coin">💰</div>
+<div class="doodle chart">📊</div>
+<div class="doodle bank">🏦</div>
+<div class="doodle graph">📈</div>
+
+<a href="index.html#projects" class="back">← Back</a>
+
+<!-- HERO -->
+
+<section class="hero wrap">
+
+<h1>APEX</h1>
+
+<p>
+A futuristic finance intelligence dashboard designed to help users track portfolio performance, analyze transaction behavior, visualize market trends, and manage financial decisions through real-time analytics.
+</p>
+
+<div class="meta">
+
+<span>Role: UI/UX Designer + Frontend Developer</span>
+
+<span>Duration: Personal Project</span>
+
+<span>React.js • Charts • Analytics • Responsive Design</span>
+
+</div>
+
+</section>
+
+<!-- PROBLEM -->
+
+<section class="sec wrap">
+
+<h2>The Problem</h2>
+
+<p class="txt">
+
+Most finance dashboards feel outdated, cluttered, and difficult to interpret. Users often struggle to understand spending patterns, portfolio movement, and financial insights in a visually intuitive way.
+
+</p>
+
+</section>
+
+<!-- SOLUTION -->
+
+<section class="sec wrap">
+
+<h2>My Solution</h2>
+
+<p class="txt">
+
+I designed APEX as a modern financial intelligence platform focused on clean data visualization, intuitive navigation, live analytics, transaction tracking, theme customization, and responsive mobile experiences.
+
+</p>
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="sec wrap">
+
+<h2>Key Features</h2>
+
+<div class="grid">
+
+<div class="card">Live Financial Dashboard</div>
+
+<div class="card">Revenue Flow Visualization</div>
+
+<div class="card">Portfolio Analytics</div>
+
+<div class="card">Transaction Management</div>
+
+<div class="card">Dark & Light Theme Toggle</div>
+
+<div class="card">Responsive Mobile Design</div>
+
+</div>
+
+</section>
+
+<!-- PROCESS -->
+
+<section class="sec wrap">
+
+<h2>Process</h2>
+
+<div class="process">
+
+<div class="step">Research</div>
+
+<div class="step">Wireframing</div>
+
+<div class="step">UI Design</div>
+
+<div class="step">Frontend Development</div>
+
+<div class="step">Responsive Testing</div>
+
+</div>
+
+</section>
+<!-- SCREEN 1 -->
+
+<section class="sec wrap">
+
+<h2>Financial Command Dashboard</h2>
+
+<p class="txt">
+
+The primary dashboard gives users an instant overview of portfolio value, income, expenses, savings progress, recent transactions, and revenue movement through interactive visual analytics.
+
+</p>
+
+<div class="shot">
+<img src="assets/apex/apex1.png">
+</div>
+
+</section>
+
+
+<!-- SCREEN 2 -->
+
+<section class="sec wrap">
+
+<h2>Advanced Market Analytics</h2>
+
+<p class="txt">
+
+The analytics section helps users understand merchant exposure and market share distribution through visual graphs, helping identify spending concentration and financial patterns.
+
+</p>
+
+<div class="shot">
+<img src="assets/apex/apex2.png">
+</div>
+
+</section>
+
+
+<!-- SCREEN 3 -->
+
+<section class="sec wrap">
+
+<h2>Transaction Ledger System</h2>
+
+<p class="txt">
+
+Users can monitor every financial activity inside a clean transaction management system that organizes merchant data, category classification, transaction date, and real-time amount tracking.
+
+</p>
+
+<div class="shot">
+<img src="assets/apex/apex3.png">
+</div>
+
+</section>
+
+
+<!-- SCREEN 4 -->
+
+<section class="sec wrap">
+
+<h2>Custom Settings Experience</h2>
+
+<p class="txt">
+
+The settings interface allows users to personalize their dashboard experience with theme switching while maintaining account security through a clean and minimal control panel.
+
+</p>
+
+<div class="shot">
+<img src="assets/apex/apex4.png">
+</div>
+
+</section>
+
+
+<!-- SCREEN 5 -->
+
+<section class="sec wrap">
+
+<h2>Light Mode Dashboard</h2>
+
+<p class="txt">
+
+APEX supports seamless dark-to-light mode switching, allowing users to choose their preferred interface while preserving the same clean financial data architecture.
+
+</p>
+
+<div class="shot">
+<img src="assets/apex/apex5.png">
+</div>
+
+</section>
+
+
+<!-- SCREEN 6 -->
+
+<section class="sec wrap">
+
+<h2>Light Mode Analytics</h2>
+
+<p class="txt">
+
+All advanced analytics components adapt dynamically between themes while preserving chart readability, merchant visualization, and interactive financial insights.
+
+</p>
+
+<div class="shot">
+<img src="assets/apex/apex6.png">
+</div>
+
+</section>
+
+
+<!-- SCREEN 7 -->
+
+<section class="sec wrap">
+
+<h2>Light Mode Transaction Tracking</h2>
+
+<p class="txt">
+
+Transaction monitoring remains consistent across interface themes, giving users easy access to historical financial activity and categorized spending records.
+
+</p>
+
+<div class="shot">
+<img src="assets/apex/apex7.png">
+</div>
+
+</section>
+
+
+<!-- SCREEN 8 -->
+
+<section class="sec wrap">
+
+<h2>Adaptive User Settings</h2>
+
+<p class="txt">
+
+The user settings system instantly updates the entire dashboard appearance in real time, providing a personalized experience while preserving usability and accessibility.
+
+</p>
+
+<div class="shot">
+<img src="assets/apex/apex8.png">
+</div>
+
+</section>
+
+
+<!-- IMPACT -->
+
+<section class="sec wrap">
+
+<h2>Impact</h2>
+
+<div class="grid">
+
+<div class="card">
+Designed a futuristic finance dashboard with premium UI experience
+</div>
+
+<div class="card">
+Built complete theme-switching architecture for user customization
+</div>
+
+<div class="card">
+Created scalable financial data visualization system
+</div>
+
+</div>
+
+</section>
+
+
+<!-- LEARNING -->
+
+<section class="sec wrap">
+
+<h2>What I Learned</h2>
+
+<p class="txt">
+
+This project helped me improve advanced dashboard design thinking, frontend architecture planning, financial data visualization, responsive design principles, and building premium user experiences for complex data-heavy systems.
+
+</p>
+
+</section>
+
+</body>
+</html>

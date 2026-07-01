@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pinterest Case Study</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:linear-gradient(180deg,#fff9f8,#fff4f2);
+color:#2b2b2b;
+overflow-x:hidden;
+position:relative;
+}
+
+
+/* BACK BUTTON */
+
+.back-btn{
+position:fixed;
+top:30px;
+left:35px;
+background:black;
+color:white;
+text-decoration:none;
+padding:16px 26px;
+border-radius:50px;
+font-size:20px;
+font-weight:600;
+z-index:100;
+}
+
+
+/* BACKGROUND BLOBS */
+
+.bg{
+position:fixed;
+border-radius:50%;
+filter:blur(90px);
+opacity:.4;
+z-index:-2;
+}
+
+.one{
+width:300px;
+height:300px;
+background:#ffd8d8;
+top:80px;
+left:80px;
+}
+
+.two{
+width:280px;
+height:280px;
+background:#ffe8e8;
+right:100px;
+top:220px;
+}
+
+
+/* DOODLES */
+
+.doodle{
+position:fixed;
+font-size:42px;
+opacity:.08;
+z-index:-1;
+animation:float 7s ease-in-out infinite;
+}
+
+.pin{
+top:120px;
+left:140px;
+}
+
+.heart{
+right:180px;
+top:180px;
+animation-delay:2s;
+}
+
+.spark{
+right:180px;
+bottom:160px;
+animation-delay:4s;
+}
+
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-15px);}
+100%{transform:translateY(0px);}
+}
+
+
+/* HERO */
+
+.hero{
+padding:140px 10% 70px;
+max-width:1400px;
+margin:auto;
+}
+
+.hero h1{
+font-size:90px;
+font-weight:800;
+margin-bottom:30px;
+
+background:linear-gradient(90deg,#e53935,#ff6b6b);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+font-size:22px;
+line-height:2;
+color:#555;
+margin-bottom:40px;
+max-width:1200px;
+}
+
+
+/* PILLS */
+
+.meta{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.meta span{
+padding:16px 28px;
+background:rgba(255,255,255,.8);
+border:1px solid #ffd1d1;
+border-radius:50px;
+font-size:18px;
+}
+
+
+/* SHOWCASE */
+
+.showcase{
+padding:60px 10%;
+text-align:center;
+}
+
+.showcase h2{
+font-size:42px;
+margin-bottom:35px;
+color:#e53935;
+}
+
+.mockup{
+width:100%;
+max-width:1400px;
+border-radius:25px;
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+
+/* PROCESS */
+
+.process{
+padding:90px 10%;
+max-width:1400px;
+margin:auto;
+}
+
+.process h2{
+font-size:42px;
+margin-bottom:45px;
+color:#e53935;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:25px;
+box-shadow:0 8px 20px rgba(0,0,0,.05);
+}
+
+.card h3{
+font-size:24px;
+margin-bottom:15px;
+}
+
+.card p{
+font-size:16px;
+line-height:1.8;
+color:#666;
+}
+
+
+/* FINAL */
+
+.learn{
+text-align:center;
+padding:100px 10%;
+}
+
+.learn h2{
+font-size:44px;
+margin-bottom:25px;
+color:#e53935;
+}
+
+.learn p{
+max-width:1000px;
+margin:auto;
+font-size:21px;
+line-height:2;
+color:#555;
+margin-bottom:40px;
+}
+
+.tags{
+display:flex;
+justify-content:center;
+gap:18px;
+flex-wrap:wrap;
+}
+
+.tags span{
+padding:14px 22px;
+background:white;
+border-radius:30px;
+box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+
+/* MOBILE */
+
+@media(max-width:1000px){
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:58px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.back-btn{
+font-size:16px;
+padding:12px 20px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<a href="index.html#projects" class="back-btn">← Back</a>
+
+
+<div class="bg one"></div>
+<div class="bg two"></div>
+
+<div class="doodle pin">📌</div>
+<div class="doodle heart">❤️</div>
+<div class="doodle spark">✨</div>
+
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>PINTEREST</h1>
+
+<p>
+
+My first UI/UX design project created entirely in Figma where I recreated and redesigned multiple Pinterest mobile application screens. Through this project, I explored mobile design systems, visual hierarchy, spacing, reusable components, interface consistency, and learned how modern consumer applications structure intuitive user experiences.
+
+</p>
+
+<div class="meta">
+
+<span>Role: UI/UX Designer</span>
+
+<span>Timeline: First Figma Project</span>
+
+<span>Figma • Mobile UI • Prototyping</span>
+
+</div>
+
+</section>
+
+
+
+<!-- BIG IMAGE -->
+
+<section class="showcase">
+
+<h2>Designed Screens</h2>
+<img src="assets/pinterest/pinterest1.png" class="mockup">
+
+
+<img src="assets/pinterest/pinterest2.png" class="mockup">
+
+</section>
+
+
+
+<!-- DESIGN PROCESS -->
+
+<section class="process">
+
+<h2>What I Designed</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Login & Onboarding</h3>
+<p>Designed authentication screens focusing on user entry flow, account creation patterns and familiar app interactions.</p>
+</div>
+
+<div class="card">
+<h3>Home Feed Layout</h3>
+<p>Recreated Pinterest-style masonry feed understanding content hierarchy and image-first browsing patterns.</p>
+</div>
+
+<div class="card">
+<h3>Search Experience</h3>
+<p>Designed discovery screens helping users explore content ideas and browse inspiration collections.</p>
+</div>
+
+<div class="card">
+<h3>Boards Interface</h3>
+<p>Created board management layouts helping users save and organize collections through intuitive interactions.</p>
+</div>
+
+<div class="card">
+<h3>Profile Screen</h3>
+<p>Designed user profile pages showing boards, pins, saved content and social interaction structure.</p>
+</div>
+
+<div class="card">
+<h3>Settings Navigation</h3>
+<p>Learned app architecture by recreating settings pages, account management and navigation systems.</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- LEARNING -->
+
+<section class="learn">
+
+<h2>What This Project Taught Me</h2>
+
+<p>
+
+This project marked the beginning of my UI/UX journey. It helped me understand how real-world applications are structured, how spacing and component systems create consistency, and how thoughtful interface design shapes seamless digital experiences. It became the foundation for my later product design work.
+
+</p>
+
+<div class="tags">
+
+<span>Visual Hierarchy</span>
+<span>Figma</span>
+<span>Mobile UI</span>
+<span>Design Systems</span>
+<span>Components</span>
+<span>Prototyping</span>
+
+</div>
+
+</section>
+
+
+</body>
+</html>
